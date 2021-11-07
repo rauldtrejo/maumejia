@@ -58,3 +58,32 @@
     /* font-size: 30.5px; */
     filter: drop-shadow(2px 4px 6px red);
 }
+@keyframes slideInFromTop {
+0% {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+100% {
+    transform: translateY(0);
+    opacity: 1;
+}
+}
+@keyframes heroText{
+    0% {
+        transform: translatex(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.pollo {  
+/* This section calls the slideInFromTop animation we defined above */
+animation: 1s ease-in-out 0s 1 slideInFromTop;
+}
+
+.hero-text{
+    animation: 1s ease-in-out 0s 1 heroText;
+}
