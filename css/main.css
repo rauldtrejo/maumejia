@@ -55,6 +55,6 @@
 }
 .nav-link:hover {
     color: rgb(255, 255, 255);
-    font-size: 31px;
+    /* font-size: 30.5px; */
     filter: drop-shadow(2px 4px 6px red);
 }
