@@ -29,3 +29,32 @@
 .featurette-image{
     border-radius: 50px;
 }
+
+.navbar-nav {
+    align-items: center;
+}
+
+.logo-neon {
+    transition-property: all;
+    transition-duration: 100ms;
+    transition-timing-function: linear;
+}
+
+.logo-neon:hover{
+    filter: drop-shadow(2px 4px 6px red);
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-shadow: -2px 2px 2px #741676, -3px 2px 2px #d181d8;
+    font-weight: 200;
+    transition-property: all;
+    transition-duration: 100ms;
+    transition-timing-function: linear;
+}
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+    font-size: 31px;
+    filter: drop-shadow(2px 4px 6px red);
+}
