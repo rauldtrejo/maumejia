@@ -46,8 +46,9 @@
 
 .nav-link {
     color: rgb(255, 255, 255);
-    font-size: 30px;
-    text-shadow: -2px 2px 2px #741676, -3px 2px 2px #d181d8;
+    /* font-family: 'Tourney', cursive; */
+    font-size: 25px;
+    text-shadow: -3px 2px 2px #741676, -4px 2px 2px #d181d8;
     font-weight: 200;
     transition-property: all;
     transition-duration: 100ms;
@@ -86,4 +87,18 @@ animation: 1s ease-in-out 0s 1 slideInFromTop;
 
 .hero-text{
     animation: 1s ease-in-out 0s 1 heroText;
+}
+
+
+/* footer {
+    background-image: url('../assets/Triangle\ Pattern.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15vh;
+
+} */
+
+
+body{
+    padding-bottom: 0px !important;
 }
