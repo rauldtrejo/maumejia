@@ -1,19 +1,4 @@
-/* The hero image */
-.page-hero {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/Camelina\ y\ el\ ojo\ de\ Dios.jpg");
-  
-    /* Set a specific height */
-    height: 50%;
-  
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin-bottom: 50px;
-  }
-  
+
 .hero-inner-container{
     height: 555px;
 }
@@ -24,6 +9,10 @@
 
 .navbar{
     background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
 }
 
 .featurette-image{
@@ -59,16 +48,26 @@
     /* font-size: 30.5px; */
     filter: drop-shadow(2px 4px 6px red);
 }
-@keyframes slideInFromTop {
+@keyframes fadeIn {
 0% {
-    transform: translateY(-100%);
+    transform: translateZ(-100%);
     opacity: 0;
 }
 100% {
-    transform: translateY(0);
+    transform: translateZ(0);
     opacity: 1;
 }
 }
+@keyframes slideFromTop{
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+    }
 @keyframes heroText{
     0% {
         transform: translatex(-50%);
@@ -81,24 +80,93 @@
 }
 
 .pollo {  
-/* This section calls the slideInFromTop animation we defined above */
-animation: 1s ease-in-out 0s 1 slideInFromTop;
+/* This section calls the fadeIn animation we defined above */
+animation: 1.5s ease-in-out 0s 1 fadeIn;
 }
 
 .hero-text{
     animation: 1s ease-in-out 0s 1 heroText;
+    margin-top: 2rem;
 }
 
+.pollo-header {
+    color: white;
+    background-image: url("../assets/polloHero.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 111vh;
+    padding: 0 15%;
+  }
 
-/* footer {
-    background-image: url('../assets/Triangle\ Pattern.svg');
+  .container{
+      max-width: 100% !important;
+  }
+
+  .marias-section{
+    position: sticky; 
+    top: 0vh; 
+    height: 110vh; 
+    background-image: url('../assets/Nopales.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 15vh;
+    display: flex; 
+    align-items: center;
+    padding: 0 15%;
+  }
 
-} */
+  .slide-card{
+    position: sticky;
+    top: 11vh;
+    height: 90vh;
+    padding: 0% 10%;
+    align-items: center;
+  }
 
+  .slide-1{
+      background-color: darkcyan;
+  }
 
-body{
-    padding-bottom: 0px !important;
+  .slide-2{
+      background-color: darksalmon;
+  }
+
+  .slide-3{
+      background-color: darkgoldenrod;
+  }
+
+  body{
+      background-color: black;
+  }
+
+.footer{
+    position: absolute;
+    padding: 1% 15%
 }
+
+.featurette-heading{
+    margin-top: 0 !important;
+    color: white;
+    margin-bottom: 2rem !important;
+}
+
+.featurette-image{
+    border-radius: 50% !important;
+}
+
+.arrow {
+    box-sizing: border-box;
+    height: 5vw;
+    width: 5vw;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 8px 8px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+  }
+  
+  .arrow:hover {
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+  }
