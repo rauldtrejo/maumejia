@@ -120,7 +120,7 @@ animation: 1.5s ease-in-out 0s 1 fadeIn;
     position: sticky;
     top: 11vh;
     height: 90vh;
-    padding: 0% 10%;
+    padding: 0% 20%;
     align-items: center;
   }
 
@@ -133,7 +133,11 @@ animation: 1.5s ease-in-out 0s 1 fadeIn;
   }
 
   .slide-3{
-      background-color: darkgoldenrod;
+      background-color: goldenrod;
+      background-image: url('../assets/maiz.png');
+      background-position:bottom;
+      background-repeat: no-repeat;
+      background-size:contain;
   }
 
   body{
